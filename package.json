@@ -4,9 +4,11 @@
   "description": "test update",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+	"build": "build --win",
+	"ship": "build --win -p always"
   },
-  "repository": "https://github.com/stellarLog/testa2.git",
+  "repository": "https://github.com/stellarLog/testa2",
   "keywords": [
     "Electron",
     "quick",
@@ -17,6 +19,10 @@
   "author": "me",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "~1.7.8"
+    "electron": "~1.7.8",
+    "electron-builder": "^19.54.0"
+  },
+  "dependencies": {
+    "electron-updater": "^2.19.1"
   }
 }
